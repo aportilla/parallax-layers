@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>     
+        <title>Parallax Example 1 : Adam Portilla</title>
+        <script src="parallax.js"></script>
+    	<style type="text/css">
+    	
+    	
+    	   html, body {
+    	       position: absolute;
+    	       height: 100%;
+    	       width: 100%;
+    	       margin: 0;
+    	       padding: 0;
+    	       overflow: hidden;
+    	   }
+    	
+    	   .parallax {
+    	       text-align: center;
+    	       width: 100%;
+    	       margin-top: 200px;
+    	       height: 300px;
+    	       position: relative;
+    	       cursor: default;
+    	   }
+    	
+    	   .parallax div {
+    	       font-family: Helvetica, Verdana, Arial, sans-serif;
+    	       font-weight: bold;
+    	       position: absolute;
+    	       width: 100%;
+    	       text-align: center;
+    	       -webkit-transform: rotate(-5deg); 
+               -moz-transform: rotate(-5deg);	
+    	   }
+    	
+    	   .c6 {color: #E3EB5C;top:15px;font-size: 7em;}
+    	   .c7 {color: #D7E035;top:18px;font-size: 7.5em;}
+    	   .c8 {color: #C0CA0E;top:21px;font-size: 8em;}
+    	   .c9 {color: #1E5280;top:24px;font-size: 8.5em;}
+    	   .c10 {color: #69A5E0;top:27px;font-size: 9em;}
+    	
+    	</style>
+    </head>
+     
+    <body>
+        
+        <div class="parallax">
+            <div class="c6" id="layer1">parallax</div>
+            <div class="c7" id="layer2">parallax</div>
+            <div class="c8" id="layer3">parallax</div>
+            <div class="c9" id="layer4">parallax</div>
+            <div class="c10" id="layer5">parallax</div>         
+        </div>
+        
+        <script type="text/javascript">
+
+            parallax.create({
+                min : 30,
+                max : -500,
+                elements : ['layer1','layer2','layer3','layer4','layer5']
+            });
+            
+        </script>
+            
+    </body>
+    
+</html>

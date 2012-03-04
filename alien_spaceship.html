@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>     
+        <title></title>  
+        <script src="parallax.js"></script>
+    	<style type="text/css">
+    	
+    	   html, body {
+    	       position: absolute;
+    	       height: 100%;
+    	       width: 100%;
+    	       margin: 0;
+    	       padding: 0;
+    	       overflow: hidden;
+    	       background: #13131a;
+    	   }
+    	
+    	   .parallax {
+    	       position: absolute;
+    	       width: 2000px;
+    	       height: 1600px;
+    	       left: 50%;
+    	       top: 50%;
+    	       margin-top: -800px;
+    	       margin-left: -1000px;
+    	       cursor: crosshair !important;
+    	   }
+    	
+    	   .parallax div {
+    	       position: absolute;
+    	       width: 2000px;
+    	       height: 1600px;
+    	   }
+    	
+    	   #stars0 {background: url('parallax_stars_0.gif');}
+    	   #stars1 {background: url('parallax_stars_1.gif');}
+    	   #stars2 {background: url('parallax_stars_2.gif');}
+    	   #stars3 {background: url('parallax_stars_3.gif');}
+    	   
+    	   .parallax .ring {
+    	       margin-top: 684px;
+    	       margin-left: 1017px;
+    	       height: 38px;
+    	       width: 38px;
+    	       background: url('space-ring.png');
+    	   }
+    	   
+    	   #spaceship {
+    	       margin-top: 700px;
+    	       margin-left: 1000px;
+    	       height: 56px;
+    	       width: 65px;
+    	       background: url('spaceship.png');
+    	   }
+    	   
+    	   #ring0 {
+                -webkit-transform: scale(0.26);
+                -moz-transform: scale(0.26);
+                -ms-transform: scale(0.26);
+                transform: scale(0.26);
+    	   }
+    	   #ring1 {
+                -webkit-transform: scale(0.32);
+                -moz-transform: scale(0.32);
+                -ms-transform: scale(0.32);
+                transform: scale(0.32);
+    	   }
+    	   #ring2 {
+                -webkit-transform: scale(0.4);
+                -moz-transform: scale(0.4);
+                -ms-transform: scale(0.4);
+                transform: scale(0.4);
+    	   }
+    	   #ring3 {
+                -webkit-transform: scale(0.5);
+                -moz-transform: scale(0.5);
+                -ms-transform: scale(0.5);
+                transform: scale(0.5);
+    	   }
+    	   #ring4 {
+                -webkit-transform: scale(0.64);
+                -moz-transform: scale(0.64);
+                -ms-transform: scale(0.64);
+                transform: scale(0.64);
+    	   }
+    	   #ring5 {
+                -webkit-transform: scale(0.8);
+                -moz-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                transform: scale(0.8);
+    	   }
+    	   #ring6 {
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+    	   }
+
+    	</style>
+    </head>
+     
+    <body>
+        
+        <div class="parallax">
+            <div id="stars0"></div>
+            <div id="stars1"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>          
+            <div id="spaceship"></div>     
+            <div id="ring0" class="ring"></div>    
+            <div id="ring1" class="ring"></div>    
+            <div id="ring2" class="ring"></div>    
+            <div id="ring3" class="ring"></div>    
+            <div id="ring4" class="ring"></div> 
+            <div id="ring5" class="ring"></div>    
+            <div id="ring6" class="ring"></div> 
+        </div>
+        
+        <script type="text/javascript">
+
+            parallax.create({
+                min : -10,
+                max : 900,
+                offset : 0,
+                container : document.body,
+                elements : [
+                    'stars0'
+                    ,'stars1'
+                    ,0
+                    ,'stars2'
+                    ,0
+                    ,0
+                    ,'stars3'
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,'spaceship'
+                    ,0
+                    ,0
+                    ,0
+                    ,'ring0'
+                    ,'ring1'
+                    ,0
+                    ,'ring2'
+                    ,0
+                    ,0
+                    ,'ring3'
+                    ,0
+                    ,0
+                    ,0
+                    ,'ring4'
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,'ring5'
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,0
+                    ,'ring6'
+                ]
+            });
+            
+        </script>
+            
+    </body>
+    
+</html>
